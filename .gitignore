@@ -4,3 +4,6 @@
 .local/
 .npm/
 *.ipynb
+data/
+
+easybuild-data/

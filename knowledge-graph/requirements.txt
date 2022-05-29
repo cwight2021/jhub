@@ -1,0 +1,9 @@
+requests
+pandas
+networkx
+rdflib>=6.0.0
+SPARQLWrapper
+ontospy
+pyshacl
+PyShEx
+PyShExC
