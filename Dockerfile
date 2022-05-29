@@ -205,7 +205,6 @@ RUN mkdir -p $PERSISTENT_FOLDER
 WORKDIR ${WORKSPACE}
 VOLUME [ "${PERSISTENT_FOLDER}" ]
 
-ADD README.ipynb $WORKSPACE
 
 CMD [ "start-notebook.sh", "--no-browser", "--ip=0.0.0.0", "--config=/etc/jupyter/jupyter_notebook_config.py" ]
 
