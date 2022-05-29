@@ -204,7 +204,7 @@ ENV PERSISTENT_FOLDER="${WORKSPACE}/persistent"
 RUN mkdir -p $PERSISTENT_FOLDER
 WORKDIR ${WORKSPACE}
 VOLUME [ "${PERSISTENT_FOLDER}" ]
-
+RUN chmod -R 755 /home/jovyan/
 
 CMD [ "start-notebook.sh", "--no-browser", "--ip=0.0.0.0", "--config=/etc/jupyter/jupyter_notebook_config.py" ]
 
